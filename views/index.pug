@@ -1,9 +1,13 @@
 html
   head
     title= title
+    link(rel='stylesheet', href='style.css', type='text/css')
+
   body
-    h1= "Här är min lista"
-    include get_form.pug
-        ul
-            each val, index in list
-                li= index + ':' + val
+    h1= "Antal Invånare / stad"
+    div#forms
+      include get_form.pug
+        div#List
+          ul#listitem
+              each val, index in list
+                  li= index + ':' + val

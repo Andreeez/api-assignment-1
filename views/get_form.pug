@@ -1,14 +1,24 @@
-form(action="/addToList" method="post") 
-    input#addToListKey1(type="text", name="addToListKey1",value='')
-    input#addToListKey2(type="number", name="addToListKey2", value='')
-    input(type="submit", value="Skicka")
+div#formsDiv
+    form#form1(action="/addToList" method="post") 
+        input#addToListKey1(type="text", name="addToListKey1",value='', placeholder="Stad")
+        br
+        input#addToListKey2(type="number", name="addToListKey2", value='' placeholder="Antal invånare")
+        br
+        input#submitButton(type="submit", value="Lägg till")
 
-form(action="/deleteFromList" method="post") 
-    input#deleteFromList(type="text", name="deleteFromList",value='')
-    input(type="submit", value="Ta bort")
-
-form(action="/updateList" method="post") 
-    input#updateListKey1(type="text", name="updateListKey1",value='')
-    input#updateListKey2(type="text", name="updateListKey2",value='')
-    input#updateListKey3(type="text", name="updateListKey3",value='')
-    input(type="submit", value="Uppdatera")
+div#formsDiv
+    form(action="/deleteFromList" method="post") 
+        br
+        input#deleteFromList(type="text", name="deleteFromList",value='', placeholder="Namn på stad")
+        br
+        input#submitButton(type="submit", value="Ta bort")
+div#formsDiv
+    form(action="/updateList" method="post") 
+        br
+        input#updateListKey1(type="text", name="updateListKey1",value='' placeholder="Redigera Stad")
+        br
+        input#updateListKey2(type="text", name="updateListKey2",value='' placeholder="Ny stadsnamn")
+        br
+        input#updateListKey3(type="text", name="updateListKey3",value='' placeholder="Nytt antal invånare")
+        br
+        input#submitButton(type="submit", value="Uppdatera")

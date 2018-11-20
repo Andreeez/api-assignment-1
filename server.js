@@ -8,6 +8,8 @@ app.set('view engine', 'pug');
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static('myJsonObject'));
+app.use(express.static('stylesheets'));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 
 let data = fs.readFileSync('./myJsonObject/list.json');
@@ -15,10 +17,6 @@ let list = JSON.parse(data);
 
 app.get("/", (req,response) => response.render('index', {list})
 );
-
-// function getList(request, response){
-//     response.send(JSON.stringify(list));
-// }
 
 //Funktion för att kunna söka
 app.get('/:key', (req, res) => {

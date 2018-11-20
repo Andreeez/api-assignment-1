@@ -1,0 +1,51 @@
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+body{
+    background-color: grey;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+
+ 
+}
+
+#forms{
+    margin: auto;
+    /* margin-left: 600px; */
+    /* background-color: blueviolet; */
+    height: 120px;
+    width: 800px;
+    /* float: right; */
+}
+#formsDiv{
+    background-color: rgba(0, 0, 0, 0.31);
+}
+input{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+#submitButton{
+    background-color: 709084;
+    border: none;
+    height: 50px;
+    width: 100px;
+}
+#List{
+    /* padding-top: 5px; */
+    font-size: 25px;
+    background-color: #709084;
+    height: 100%;
+    width: 800px;
+}
+#listitem{
+    /* padding-top: 15px; */
+
+    color: white;
+    list-style: none;
+
+}
