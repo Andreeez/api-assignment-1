@@ -1,0 +1,9 @@
+html
+  head
+    title= title
+  body
+    h1= "Här är min lista"
+    include get_form.pug
+        ul
+            each val, index in list
+                li= index + ':' + val

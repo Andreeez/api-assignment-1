@@ -1,0 +1,14 @@
+form(action="/addToList" method="post") 
+    input#addToListKey1(type="text", name="addToListKey1",value='')
+    input#addToListKey2(type="number", name="addToListKey2", value='')
+    input(type="submit", value="Skicka")
+
+form(action="/deleteFromList" method="post") 
+    input#deleteFromList(type="text", name="deleteFromList",value='')
+    input(type="submit", value="Ta bort")
+
+form(action="/updateList" method="post") 
+    input#updateListKey1(type="text", name="updateListKey1",value='')
+    input#updateListKey2(type="text", name="updateListKey2",value='')
+    input#updateListKey3(type="text", name="updateListKey3",value='')
+    input(type="submit", value="Uppdatera")
