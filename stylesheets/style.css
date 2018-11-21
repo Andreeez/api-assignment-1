@@ -39,7 +39,7 @@ input{
     /* padding-top: 5px; */
     font-size: 25px;
     background-color: #709084;
-    height: 100%;
+    height: auto;
     width: 800px;
 }
 #listitem{

@@ -1,8 +1,9 @@
 {
           "Helsingborg": 108000,
-          "Stokcholm": 50,
           "Stockholm": 20,
           "Linköping": 10,
-          "Falun": 40,
-          "Skövde ": 40
+          "Göteborg": 30,
+          "Falun": 200,
+          "falum": 32,
+          "Umeå": 20000
 }
